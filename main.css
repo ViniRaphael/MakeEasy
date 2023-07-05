@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,500;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.main1,
+.main2 {
+    background-color: #5569b0;
+    text-align: center;
+    padding: 20px 60px;
+}
+
+.main3 {
+    background: linear-gradient(#5569b0, #7f8dd8, #2a4689);
+    text-align: center;
+    padding: 20px 60px;
+    padding-bottom: 50px;
+}
+
+.main1 h2,
+.main2 h2,
+.main3 h2 {
+    color: white;
+    padding-bottom: 20px;
+    transition: .3s;
+    transition-property: transform;
+}
+
+.main1 h2:hover,
+.main2 h2:hover,
+.main3 h2:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.apresentacao {
+    background-color: #a9b0ff;
+    border-radius: 30px;
+    margin-bottom: 10px;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    padding: 40px 10px;
+}
+
+.apresentacao img {
+    width: 400px;
+}
+
+.apresentacao h3,
+.vantagens h3,
+.valores h3 {
+    margin: 15px;
+    color: #002361;
+}
+
+.vantagens {
+    background-color: #a9b0ff;
+    border-radius: 30px;
+    padding: 10px;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 40px 10px;
+}
+
+.vantagens img {
+    width: 400px;
+}
+
+.valores {
+    background-color: #a9b0ff;
+    border-radius: 30px;
+    padding: 10px;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    padding: 40px 10px;
+}
+
+.valores img {
+    width: 400px;
+}
+
+@media (max-width: 960px) {
+    .apresentacao {
+        flex-direction: column;
+    }
+
+    .apresentacao img {
+        width: 180px;
+        margin: auto;
+    }
+
+    .vantagens {
+        flex-direction: column;
+    }
+
+    .vantagens img {
+        width: 180px;
+        margin: auto;
+    }
+
+    .valores {
+        flex-direction: column;
+    }
+
+    .valores img {
+        width: 180px;
+        margin: auto;
+    }
+}
+
+@media (min-width: 960px) {
+    .main1 h3,
+.main3 h3 {
+    padding-left: 400px;
+    padding-bottom:30px;
+}
+
+.main2 h3 {
+    padding-right: 400px;
+    padding-bottom:30px;
+}
+}

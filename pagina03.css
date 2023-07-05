@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,500;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.main1,
+.main2,
+.main3 {
+    background-color: #5569b0;
+    text-align: center;
+    padding: 20px 60px;
+    padding-bottom:80px;
+}
+
+.main3 {
+    padding-bottom: 50px;
+}
+
+.main1 h2,
+.main2 h2,
+.main3 h2 {
+    color: white;
+    padding-bottom: 20px;
+    transition: .3s;
+    transition-property: transform;
+}
+
+.main1 h2:hover,
+.main2 h2:hover,
+.main3 h2:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.email {
+    background-color: #a9b0ff;
+    border-radius: 30px;
+    margin-bottom: 10px;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    padding: 40px 10px;
+    padding-bottom: 90px;
+}
+
+.email img {
+    width: 200px;
+    padding: 20px;
+}
+
+.email h3,
+.redes h3,
+.telefone h3 {
+    margin: 15px;
+    color: #002361;
+}
+
+.redes {
+    background-color: #a9b0ff;
+    border-radius: 30px;
+    padding: 10px;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 40px 10px;
+    padding-bottom: 90px;
+}
+
+.redes img {
+    width: 200px;
+    padding: 20px;
+}
+
+.telefone {
+    background-color: #a9b0ff;
+    border-radius: 30px;
+    padding: 10px;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    padding: 40px 10px;
+    padding-bottom: 90px;
+}
+
+.telefone img {
+    width: 250px;
+    padding: 20px;
+}
+
+#emailPara{
+    text-decoration: none;
+    color:red;
+}
+
+#telefonePara{
+    text-decoration: none;
+    color:green;
+}
+
+#face, #twt, #insta, #lkd{
+    text-decoration: none;
+    color:white;
+}
+
+#emailPara:hover, #telefonePara:hover{
+    color:#21386d;
+}
+
+#face:hover{
+    color: blue;
+}
+#twt:hover{
+    color:cyan;
+}
+
+#insta:hover{
+    color:pink;
+}
+
+#lkd:hover{
+    color: #0077B5;
+}
+
+@media (max-width: 960px) {
+    .email {
+        flex-direction: column;
+    }
+
+    .email img {
+        width: 180px;
+        margin: auto;
+    }
+
+    .redes {
+        flex-direction: column;
+    }
+
+    .redes img {
+        width: 180px;
+        margin: auto;
+    }
+
+    .telefone {
+        flex-direction: column;
+    }
+
+    .telefone img {
+        width: 180px;
+        margin: auto;
+    }
+}
+
+@media (min-width: 960px) {
+    .main3 h3 {
+    padding-left: 230px;
+    padding-bottom:30px;
+}
+
+.main1 h3{
+    padding-left: 200px;
+    padding-bottom:30px;
+}
+
+.main2 h3 {
+    padding-right: 200px;
+    padding-bottom:30px;
+}
+}
